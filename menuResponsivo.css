@@ -1,0 +1,40 @@
+.sanduiche_check{
+    display: none;
+}
+
+.sanduiche_label{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .sanduiche_label{
+        display: inline;
+    }
+
+    .sanduiche_label:hover{
+        cursor: pointer;
+    }
+
+    .link_menu{
+        display: none;
+    }
+
+    .sanduiche_check:checked ~ .link_menu{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px){
+    .sanduiche_check{
+        display: none;
+    }
+
+    .sanduiche_label{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
